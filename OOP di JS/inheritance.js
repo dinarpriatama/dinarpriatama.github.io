@@ -1,3 +1,6 @@
+// Pewarisan/ inheritance memungkinkan class untuk mewarisi property dan method yang dimilikinya 
+// sehingga membantu mengurangi penulisan kode secara berulang (mengurangi redundancy kode)
+
 class SmartPhones {
     constructor(color, brand, model) {
       this.color = color;

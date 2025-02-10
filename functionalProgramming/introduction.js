@@ -14,7 +14,7 @@ for(let i = 0; i < names.length; i++) {
 console.log(newNamesWithExcMark); // output: [ 'Harry!', 'Ron!', 'Jeff!', 'Thomas!' ]
 
 /*
-Gaya deklaratif
+Gaya deklaratif lebih ringkas dan simple.
 */
 
 const names_1 = ['Nikita', 'Wita', 'Erna', 'Elin'];
@@ -22,3 +22,5 @@ const names_1 = ['Nikita', 'Wita', 'Erna', 'Elin'];
 const newNames_1WithMark = names_1.map((names_1) => `${names_1}!`);
 
 console.log(newNames_1WithMark); 
+
+// Konsep utama dalam FP meliputi pure function, high-order function, recursion, dan immutability.

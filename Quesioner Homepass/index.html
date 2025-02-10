@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Survey Pelanggan Internet</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Survey Pelanggan Internet</h1>
+        <h2>Rumah yang Belum Terkoneksi Internet</h2>
+        
+        <div class="card">
+            <label>Rumah Class</label>
+            <div class="radio-group">
+                <input type="radio" name="rumah_class" value="A"> A
+                <input type="radio" name="rumah_class" value="B"> B
+                <input type="radio" name="rumah_class" value="C"> C
+            </div>
+        </div>
+        
+        <div class="card">
+            <label>Nama Pelanggan</label>
+            <input type="text" placeholder="Masukkan nama pelanggan">
+        </div>
+        
+        <div class="card">
+            <label>Alamat Rumah</label>
+            <input type="text" placeholder="Masukkan alamat rumah">
+        </div>
+        
+        <div class="card">
+            <label>Nomor Rumah</label>
+            <input type="text" placeholder="Isi 0 jika tidak ada" value="0">
+        </div>
+        
+        <div class="card">
+            <label>Apakah alasan Anda saat ini tidak berlangganan Internet?</label>
+            <div class="radio-group">
+                <input type="radio" name="alasan" value="tidak_tersedia"> Tidak tersedia jaringan internet<br>
+                <input type="radio" name="alasan" value="mahal"> Sudah tersedia jaringan internet namun biaya terlalu mahal<br>
+                <input type="radio" name="alasan" value="tidak_butuh"> Belum membutuhkan paket data di rumah
+            </div>
+        </div>
+        
+        <div class="card">
+            <label>Apakah tertarik berlangganan internet?</label>
+            <div class="radio-group">
+                <input type="radio" name="berlangganan" value="ya"> Ya
+                <input type="radio" name="berlangganan" value="tidak"> Tidak
+            </div>
+        </div>
+        
+        <div class="card">
+            <label>Jika Ya, berapa kisaran harga berlangganan yang diinginkan?</label>
+            <div class="radio-group">
+                <input type="radio" name="harga" value="170k-220k"> 170k - 220k<br>
+                <input type="radio" name="harga" value="220k-280k"> 220k - 280k<br>
+                <input type="radio" name="harga" value="280k-375k"> 280k - 375k<br>
+                <input type="radio" name="harga" value="375k-465k"> 375k - 465k<br>
+                <input type="radio" name="harga" value="gt465k"> &gt; 465k<br>
+            </div>
+        </div>
+        
+        <div class="card">
+            <label>Berapa kisaran penggunaan pulsa per bulan/rumah?</label>
+            <input type="text" placeholder="Isi 0 jika tidak tahu" value="0">
+        </div>
+        
+        <div class="card">
+            <label>Tanda Tangan Pemilik Rumah</label>
+            <canvas class="signature-box" id="signatureCanvas"></canvas>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

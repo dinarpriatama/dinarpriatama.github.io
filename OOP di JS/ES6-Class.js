@@ -22,7 +22,7 @@ person2.eat();
 // ES6 Class
 
 class Persons {
-    constructor(name, age) {
+  constructor(name, age) {
     this.name = name;
     this.age = age;
     }
